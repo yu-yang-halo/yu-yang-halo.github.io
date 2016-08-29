@@ -108,7 +108,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/08/29/andorid-s-1/index.html">
 <meta property="og:site_name" content="开启学习之旅">
 <meta property="og:description" content="JavaBinder: !!! FAILED BINDER TRANSACTION !!! Bitmap太大无法在Intent中传递一般的解决办法是对Bitmap进行缩放12345678910111213// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法Bitmap.createScaledBitmap(bitmap,w,h,true);//这种方式会带来很多意想不到的bug，">
-<meta property="og:updated_time" content="2016-08-29T08:26:53.438Z">
+<meta property="og:updated_time" content="2016-08-29T08:31:19.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bitmap在Intent中传递的问题">
 <meta name="twitter:description" content="JavaBinder: !!! FAILED BINDER TRANSACTION !!! Bitmap太大无法在Intent中传递一般的解决办法是对Bitmap进行缩放12345678910111213// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法Bitmap.createScaledBitmap(bitmap,w,h,true);//这种方式会带来很多意想不到的bug，">
@@ -355,7 +355,7 @@
 <p>本地缓存<br>在跳转Intent之前，将Bitmap缓存到到本地文件中，然后再取出来。</p>
 <p>内存缓存<br>使用单例模式的方式缓存（不建议）</p>
 <h5 id="Bitmap-createScaledBitmap使用注意"><a href="#Bitmap-createScaledBitmap使用注意" class="headerlink" title="Bitmap.createScaledBitmap使用注意"></a>Bitmap.createScaledBitmap使用注意</h5><p>Bitmap.createScaledBitmap 该方法会创建一个新的Bitmap，而且不会按照比例拉伸<br>它直接会按照你输入的Width和Height输出,这样的输出会导致</p>
-<p>总结一下如何解决Intent传输Bitmap crash或者无法传递的问题<br>1.Bitmap缩小使用Canvas来缩放<br>2.如果Bitmap本身很小就无需按照缩放，否则会导致crash</p>
+<p>总结一下如何解决Intent传输Bitmap crash或者无法传递的问题<br>1.Bitmap缩小使用Canvas来缩放<br>2.如果Bitmap本身很小就无需缩放，否则会导致很奇怪的crash</p>
 
       
     </div>
