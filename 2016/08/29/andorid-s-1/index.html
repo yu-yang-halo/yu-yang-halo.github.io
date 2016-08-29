@@ -108,7 +108,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/08/29/andorid-s-1/index.html">
 <meta property="og:site_name" content="开启学习之旅">
 <meta property="og:description" content="Bitmap太大无法在Intent中传递一般的解决办法是对Bitmap进行缩放12345678910111213// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法Bitmap.createScaledBitmap(bitmap,w,h,true);或者BitmapFactory.Options opts = new BitmapFactory.Options();// 设置为t">
-<meta property="og:updated_time" content="2016-08-29T06:25:49.382Z">
+<meta property="og:updated_time" content="2016-08-29T06:30:52.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bitmap在Intent中传递的问题">
 <meta name="twitter:description" content="Bitmap太大无法在Intent中传递一般的解决办法是对Bitmap进行缩放12345678910111213// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法Bitmap.createScaledBitmap(bitmap,w,h,true);或者BitmapFactory.Options opts = new BitmapFactory.Options();// 设置为t">
@@ -352,7 +352,7 @@
       
         <h5 id="Bitmap太大无法在Intent中传递"><a href="#Bitmap太大无法在Intent中传递" class="headerlink" title="Bitmap太大无法在Intent中传递"></a>Bitmap太大无法在Intent中传递</h5><p>一般的解决办法是对Bitmap进行缩放<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法</span></div><div class="line">Bitmap.createScaledBitmap(bitmap,w,h,<span class="keyword">true</span>);</div><div class="line">或者</div><div class="line">BitmapFactory.Options opts = <span class="keyword">new</span> BitmapFactory.Options();</div><div class="line"><span class="comment">// 设置为ture只获取图片大小</span></div><div class="line">opts.inJustDecodeBounds = <span class="keyword">true</span>;</div><div class="line">opts.inPreferredConfig = Bitmap.Config.ALPHA_8;</div><div class="line"><span class="comment">// 返回为空</span></div><div class="line">BitmapFactory.decodeFile(path, opts);</div><div class="line">opts.inSampleSize = getScaleSize(opts,w,h);</div><div class="line"><span class="comment">// 加载到内存</span></div><div class="line">opts.inJustDecodeBounds = <span class="keyword">false</span>;</div><div class="line">Bitmap bm= BitmapFactory.decodeFile(path, opts);</div></pre></td></tr></table></figure></p>
 <p>另外的解决方式就是缓存(只说明一下解决思路)</p>
-<p>本地缓存<br>在跳转Intent之前，将Bitmap缓存到到本地文件中，然后再取出来。（可使用SharedPreferences）</p>
+<p>本地缓存<br>在跳转Intent之前，将Bitmap缓存到到本地文件中，然后再取出来。</p>
 <p>内存缓存<br>使用单例模式的方式缓存（不建议）</p>
 
       
