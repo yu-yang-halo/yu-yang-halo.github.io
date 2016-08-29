@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="-iOS开发," />
+  <meta name="keywords" content="Android开发," />
 
 
 
@@ -102,16 +102,19 @@
 
 
 
-<meta name="description" content="Cell animation stop fraction must be greater than start fraction 问题1234-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section &amp;#123;   //return 0.001f;设置大于0的数导致的crash">
+<meta name="description" content="####Bitmap太大无法在Intent中传递
+一般的解决办法是对Bitmap进行缩放12345678910111213// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法Bitmap.createScaledBitmap(bitmap,w,h,true);或者BitmapFactory.Options opts = new BitmapFactory.Options();//">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cell animation stop fraction must be greater than start fraction">
-<meta property="og:url" content="http://yoursite.com/2016/08/24/hello-world/index.html">
+<meta property="og:title" content="Bitmap在Intent中传递的问题">
+<meta property="og:url" content="http://yoursite.com/2016/08/29/andorid-s-1/index.html">
 <meta property="og:site_name" content="开启学习之旅">
-<meta property="og:description" content="Cell animation stop fraction must be greater than start fraction 问题1234-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section &amp;#123;   //return 0.001f;设置大于0的数导致的crash">
-<meta property="og:updated_time" content="2016-08-24T07:36:43.136Z">
+<meta property="og:description" content="####Bitmap太大无法在Intent中传递
+一般的解决办法是对Bitmap进行缩放12345678910111213// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法Bitmap.createScaledBitmap(bitmap,w,h,true);或者BitmapFactory.Options opts = new BitmapFactory.Options();//">
+<meta property="og:updated_time" content="2016-08-29T06:23:32.720Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cell animation stop fraction must be greater than start fraction">
-<meta name="twitter:description" content="Cell animation stop fraction must be greater than start fraction 问题1234-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section &amp;#123;   //return 0.001f;设置大于0的数导致的crash">
+<meta name="twitter:title" content="Bitmap在Intent中传递的问题">
+<meta name="twitter:description" content="####Bitmap太大无法在Intent中传递
+一般的解决办法是对Bitmap进行缩放12345678910111213// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法Bitmap.createScaledBitmap(bitmap,w,h,true);或者BitmapFactory.Options opts = new BitmapFactory.Options();//">
 
 
 
@@ -132,9 +135,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/08/24/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/29/andorid-s-1/"/>
 
-  <title> Cell animation stop fraction must be greater than start fraction | 开启学习之旅 </title>
+  <title> Bitmap在Intent中传递的问题 | 开启学习之旅 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -284,7 +287,7 @@
             
             
               
-                Cell animation stop fraction must be greater than start fraction
+                Bitmap在Intent中传递的问题
               
             
           </h1>
@@ -296,8 +299,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-24T12:16:03+08:00" content="2016-08-24">
-              2016-08-24
+            <time itemprop="dateCreated" datetime="2016-08-29T13:59:10+08:00" content="2016-08-29">
+              2016-08-29
             </time>
           </span>
 
@@ -310,8 +313,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/iOS/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS</span>
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
                   </a>
                 </span>
 
@@ -323,6 +326,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/29/andorid-s-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/29/andorid-s-1/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -343,8 +353,12 @@
       
 
       
-        <h3 id="Cell-animation-stop-fraction-must-be-greater-than-start-fraction-问题"><a href="#Cell-animation-stop-fraction-must-be-greater-than-start-fraction-问题" class="headerlink" title="Cell animation stop fraction must be greater than start fraction 问题"></a>Cell animation stop fraction must be greater than start fraction 问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section &#123;</div><div class="line">   //return 0.001f;设置大于0的数导致的crash</div><div class="line">   return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="可以解决crash的bug-这应该是苹果本身的一个bug，mark一下"><a href="#可以解决crash的bug-这应该是苹果本身的一个bug，mark一下" class="headerlink" title="可以解决crash的bug,这应该是苹果本身的一个bug，mark一下"></a>可以解决crash的bug,这应该是苹果本身的一个bug，mark一下</h4>
+        <p>####Bitmap太大无法在Intent中传递</p>
+<p>一般的解决办法是对Bitmap进行缩放<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 对于网络下载转化的bitmap只能使用Bitmap自带的转化方法</span></div><div class="line">Bitmap.createScaledBitmap(bitmap,w,h,<span class="keyword">true</span>);</div><div class="line">或者</div><div class="line">BitmapFactory.Options opts = <span class="keyword">new</span> BitmapFactory.Options();</div><div class="line"><span class="comment">// 设置为ture只获取图片大小</span></div><div class="line">opts.inJustDecodeBounds = <span class="keyword">true</span>;</div><div class="line">opts.inPreferredConfig = Bitmap.Config.ALPHA_8;</div><div class="line"><span class="comment">// 返回为空</span></div><div class="line">BitmapFactory.decodeFile(path, opts);</div><div class="line">opts.inSampleSize = getScaleSize(opts,w,h);</div><div class="line"><span class="comment">// 加载到内存</span></div><div class="line">opts.inJustDecodeBounds = <span class="keyword">false</span>;</div><div class="line">Bitmap bm= BitmapFactory.decodeFile(path, opts);</div></pre></td></tr></table></figure></p>
+<p>另外的解决方式就是缓存(只说明一下解决思路)</p>
+<p>本地缓存<br>在跳转Intent之前，将Bitmap缓存到到本地文件中，然后再取出来。（可使用SharedPreferences）</p>
+<p>内存缓存<br>使用单例模式的方式缓存（不建议）</p>
+
       
     </div>
 
@@ -366,7 +380,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/iOS开发/" rel="tag">#-iOS开发</a>
+            <a href="/tags/Android开发/" rel="tag">#Android开发</a>
           
         </div>
       
@@ -375,13 +389,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/26/hello-world/" rel="next" title="Cell animation stop fraction must be greater than start fraction">
+                <i class="fa fa-chevron-left"></i> Cell animation stop fraction must be greater than start fraction
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/24/android-s-0/" rel="prev" title="Android源代码编译">
-                Android源代码编译 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -406,6 +420,10 @@
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/08/29/andorid-s-1/"
+           data-title="Bitmap在Intent中传递的问题" data-url="http://yoursite.com/2016/08/29/andorid-s-1/">
+      </div>
     
   </div>
 
@@ -449,7 +467,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -524,7 +542,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Cell-animation-stop-fraction-must-be-greater-than-start-fraction-问题"><span class="nav-number">1.</span> <span class="nav-text">Cell animation stop fraction must be greater than start fraction 问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#可以解决crash的bug-这应该是苹果本身的一个bug，mark一下"><span class="nav-number">1.1.</span> <span class="nav-text">可以解决crash的bug,这应该是苹果本身的一个bug，mark一下</span></a></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
@@ -645,9 +663,30 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"yy2016"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
 
 
 
