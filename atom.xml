@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.baidu.com/"/>
-  <updated>2016-09-08T10:05:04.895Z</updated>
+  <updated>2016-09-12T09:25:12.080Z</updated>
   <id>www.baidu.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="www.baidu.com/2016/09/07/unknown-0/"/>
     <id>www.baidu.com/2016/09/07/unknown-0/</id>
     <published>2016-09-07T04:41:12.000Z</published>
-    <updated>2016-09-08T10:05:04.895Z</updated>
+    <updated>2016-09-12T09:25:12.080Z</updated>
     
     <content type="html"><![CDATA[<p>最近看一些技术同行的博客,发现自己真是太low了，好多很好用的东西自己没用过，有的连名字都不知道。<br>所以今天在这里记录一下，以便督促自己进一步了解并使用</p>
 <ul>
@@ -79,7 +79,8 @@ but also as frameworks or static libraries for people who do not use Pods.
 <li><a href="https://www.objccn.io/" target="_blank" rel="external">objc China</a></li>
 <li><a href="https://www.objc.io/" target="_blank" rel="external">objc io</a></li>
 <li><a href="https://www.codeschool.com/" target="_blank" rel="external">codeschool</a></li>
-<li><a href="http://mightysignal.com/top-ios-sdks" target="_blank" rel="external">ios TOP opensource</a></li>
+<li><a href="http://mightysignal.com/top-ios-sdks" target="_blank" rel="external">iOS TOP opensource</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&amp;mid=2709545194&amp;idx=1&amp;sn=e0e20cd038874aaf57b7e9de0910ab92&amp;scene=0#wechat_redirect" target="_blank" rel="external">iOS 从入门到进阶的最全资料</a> </li>
 </ul>
 </li>
 </ul>
