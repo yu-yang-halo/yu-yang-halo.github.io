@@ -53,7 +53,8 @@ but also as frameworks or static libraries for people who do not use Pods.
 <li><a href="http://www.w3cfuns.com/" target="_blank" rel="external">w3cfuns</a></li>
 <li><a href="http://div.io/digg" target="_blank" rel="external">div.io</a></li>
 <li><a href="https://www.w3.org/" target="_blank" rel="external">w3c规范</a></li>
-<li><a href="https://babeljs.io/docs/learn-es2015/" target="_blank" rel="external">ES2016–(ES6)</a></li>
+<li><a href="https://babeljs.io/docs/learn-es2015/" target="_blank" rel="external">ES2015–(ES6)</a></li>
+<li><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">ECMAScript 6入门》</a>以及论坛的<a href="http://bbs.reactnative.cn/topic/15/react-react-native-的es5-es6写法对照表" target="_blank" rel="external">讨论帖</a></li>
 </ul>
 </li>
 <li>iOS开发<ul>
