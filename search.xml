@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[iOS手势单双击冲突问题]]></title>
+      <url>www.baidu.com/2016/09/30/uitapgesture/</url>
+      <content type="html"><![CDATA[<h3 id="官方文档这样写道"><a href="#官方文档这样写道" class="headerlink" title="官方文档这样写道"></a>官方文档这样写道</h3><font color="#0099ff" size="3"><br>  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if otherGestureRecognizer transitions to UIGestureRecognizerStateRecognized or UIGestureRecognizerStateBegan then this recognizer will instead transition to UIGestureRecognizerStateFailed example::a single tap may require a double tap to fail<br></font>
+
+<font color="#ff0000" size="3"><br>  -(void)requireGestureRecognizerToFail:(UIGestureRecognizer *)otherGestureRecognizer;<br>  例如：<br>   [singleGestureRecognizer requireGestureRecognizerToFail:doubleGestureRecognizer]<br> </font>
+
+<font color="#0099ff" size="3"><br><br>  大概的意思就是一个手势与另一个手势需要保持一种关系，只有当另外一个手势失败了当前手势才能调用。<br>  反之如果另外的手势被被识别了，当前手势将不会被调用。<br>  所以单击手势必须等待双击手势的识别结果才不会导致冲突问题。<br><br></font>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[程序员的工具箱]]></title>
       <url>www.baidu.com/2016/09/07/unknown-0/</url>
       <content type="html"><![CDATA[<p>最近看一些技术同行的博客,发现自己真是太low了，好多很好用的东西自己没用过，有的连名字都不知道。<br>所以今天在这里记录一下，以便督促自己进一步了解并使用</p>
@@ -44,7 +54,7 @@ for people who do not use Pods.
 <li><a href="http://dmitrysoshnikov.com" target="_blank" rel="external">ECMA</a></li>
 <li><a href="http://www.jq22.com" target="_blank" rel="external">Jquery插件</a></li>
 <li><a href="http://www.webhek.com" target="_blank" rel="external">Web骇客</a></li>
-<li><a href="https://octoverse.github.com/#frontpage" target="_blank" rel="external">GitHub 开源趋势分析</a></li>
+<li><a href="https://octoverse.github.com/#frontpage" target="_blank" rel="external">GitHub 2016开源报告</a></li>
 <li>界面设计(干货)<ul>
 <li><a href="https://dribbble.com/" target="_blank" rel="external">dribbble</a>—由众多国内外优秀的设计师或开发者，分享的一些设计效果图，其中一些内容还分享了通过代码实现的方法，代码基本都是托管在 GitHub 上的，很方便我们去学习。</li>
 <li><a href="https://www.uplabs.com/" target="_blank" rel="external">uplabs</a>—专注于面向程序猿的设计，包含 Android，iOS，Web 三个方面，如果你像搜索一下，App , icon ,之类的内容，那这个是最合适不过的了。]</li>

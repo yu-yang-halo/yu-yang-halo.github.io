@@ -92,12 +92,10 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="iOS,Android,web开发,JAVA,技术分享" />
+  <meta name="keywords" content="iOS开发," />
 
 
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="开启学习之旅" type="application/atom+xml" />
@@ -112,13 +110,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="www.baidu.com/categories/index.html">
+<meta name="description" content="官方文档这样写道  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS手势单双击冲突问题">
+<meta property="og:url" content="www.baidu.com/2016/09/30/uitapgesture/index.html">
 <meta property="og:site_name" content="开启学习之旅">
-<meta property="og:updated_time" content="2016-08-24T05:12:06.022Z">
+<meta property="og:description" content="官方文档这样写道  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if">
+<meta property="og:updated_time" content="2016-09-30T09:11:41.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="iOS手势单双击冲突问题">
+<meta name="twitter:description" content="官方文档这样写道  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if">
 
 
 
@@ -139,15 +140,9 @@
 
 
 
-  <link rel="canonical" href="www.baidu.com/categories/"/>
+  <link rel="canonical" href="www.baidu.com/2016/09/30/uitapgesture/"/>
 
-  <title>
-  
-
-  
-    分类 | 开启学习之旅
-  
-</title>
+  <title> iOS手势单双击冲突问题 | 开启学习之旅 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -168,7 +163,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -291,16 +286,138 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 2 个分类
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                iOS手势单双击冲突问题
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-30T15:06:34+08:00" content="2016-09-30">
+              2016-09-30
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/30/uitapgesture/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/30/uitapgesture/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/30/uitapgesture/" class="leancloud_visitors" data-flag-title="iOS手势单双击冲突问题">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
         </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Android/">Android</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a><span class="category-list-count">1</span></li></ul>
-        </div>
-      </div>
+      </header>
     
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="官方文档这样写道"><a href="#官方文档这样写道" class="headerlink" title="官方文档这样写道"></a>官方文档这样写道</h3><font color="#0099ff" size="3"><br>  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if otherGestureRecognizer transitions to UIGestureRecognizerStateRecognized or UIGestureRecognizerStateBegan then this recognizer will instead transition to UIGestureRecognizerStateFailed example::a single tap may require a double tap to fail<br></font>
+
+<font color="#ff0000" size="3"><br>  -(void)requireGestureRecognizerToFail:(UIGestureRecognizer *)otherGestureRecognizer;<br>  例如：<br>   [singleGestureRecognizer requireGestureRecognizerToFail:doubleGestureRecognizer]<br> </font>
+
+<font color="#0099ff" size="3"><br><br>  大概的意思就是一个手势与另一个手势需要保持一种关系，只有当另外一个手势失败了当前手势才能调用。<br>  反之如果另外的手势被被识别了，当前手势将不会被调用。<br>  所以单击手势必须等待双击手势的识别结果才不会导致冲突问题。<br><br></font>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS开发/" rel="tag">#iOS开发</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/07/unknown-0/" rel="next" title="程序员的工具箱">
+                <i class="fa fa-chevron-left"></i> 程序员的工具箱
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -311,8 +428,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="categories/index.html"
-           data-title="categories" data-url="www.baidu.com/categories/index.html">
+      <div class="ds-thread" data-thread-key="2016/09/30/uitapgesture/"
+           data-title="iOS手势单双击冲突问题" data-url="www.baidu.com/2016/09/30/uitapgesture/">
       </div>
     
   </div>
@@ -336,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://t0.qlogo.cn/mbloghead/fa874bd750abbb099e86/180"
@@ -436,6 +562,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#官方文档这样写道"><span class="nav-number">1.</span> <span class="nav-text">官方文档这样写道</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -539,6 +676,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
