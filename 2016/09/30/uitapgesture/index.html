@@ -110,16 +110,16 @@
 
 
 
-<meta name="description" content="官方文档这样写道  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if">
+<meta name="description" content="&amp;#x5B98;&amp;#x65B9;&amp;#x6587;&amp;#x6863;&amp;#x8FD9;&amp;#x6837;&amp;#x5199;&amp;#x9053;  create a relationship with another gesture recognizer that will prevent this gesture&amp;#x2019;s actions from being called until otherGes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS手势单双击冲突问题">
 <meta property="og:url" content="www.baidu.com/2016/09/30/uitapgesture/index.html">
 <meta property="og:site_name" content="开启学习之旅">
-<meta property="og:description" content="官方文档这样写道  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if">
+<meta property="og:description" content="&amp;#x5B98;&amp;#x65B9;&amp;#x6587;&amp;#x6863;&amp;#x8FD9;&amp;#x6837;&amp;#x5199;&amp;#x9053;  create a relationship with another gesture recognizer that will prevent this gesture&amp;#x2019;s actions from being called until otherGes">
 <meta property="og:updated_time" content="2016-09-30T09:11:41.291Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS手势单双击冲突问题">
-<meta name="twitter:description" content="官方文档这样写道  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if">
+<meta name="twitter:description" content="&amp;#x5B98;&amp;#x65B9;&amp;#x6587;&amp;#x6863;&amp;#x8FD9;&amp;#x6837;&amp;#x5199;&amp;#x9053;  create a relationship with another gesture recognizer that will prevent this gesture&amp;#x2019;s actions from being called until otherGes">
 
 
 
@@ -371,11 +371,11 @@
       
 
       
-        <h3 id="官方文档这样写道"><a href="#官方文档这样写道" class="headerlink" title="官方文档这样写道"></a>官方文档这样写道</h3><font color="#0099ff" size="3"><br>  create a relationship with another gesture recognizer that will prevent this gesture’s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if otherGestureRecognizer transitions to UIGestureRecognizerStateRecognized or UIGestureRecognizerStateBegan then this recognizer will instead transition to UIGestureRecognizerStateFailed example::a single tap may require a double tap to fail<br></font>
+        <h3 id="&#x5B98;&#x65B9;&#x6587;&#x6863;&#x8FD9;&#x6837;&#x5199;&#x9053;"><a href="#&#x5B98;&#x65B9;&#x6587;&#x6863;&#x8FD9;&#x6837;&#x5199;&#x9053;" class="headerlink" title="&#x5B98;&#x65B9;&#x6587;&#x6863;&#x8FD9;&#x6837;&#x5199;&#x9053;"></a>&#x5B98;&#x65B9;&#x6587;&#x6863;&#x8FD9;&#x6837;&#x5199;&#x9053;</h3><font color="#0099ff" size="3"><br>  create a relationship with another gesture recognizer that will prevent this gesture&#x2019;s actions from being called until otherGestureRecognizer transitions to UIGestureRecognizerStateFailed if otherGestureRecognizer transitions to UIGestureRecognizerStateRecognized or UIGestureRecognizerStateBegan then this recognizer will instead transition to UIGestureRecognizerStateFailed example::a single tap may require a double tap to fail<br></font>
 
-<font color="#ff0000" size="3"><br>  -(void)requireGestureRecognizerToFail:(UIGestureRecognizer *)otherGestureRecognizer;<br>  例如：<br>   [singleGestureRecognizer requireGestureRecognizerToFail:doubleGestureRecognizer]<br> </font>
+<font color="#ff0000" size="3"><br>  -(void)requireGestureRecognizerToFail:(UIGestureRecognizer *)otherGestureRecognizer;<br>  &#x4F8B;&#x5982;&#xFF1A;<br>   [singleGestureRecognizer requireGestureRecognizerToFail:doubleGestureRecognizer]<br> </font>
 
-<font color="#0099ff" size="3"><br><br>  大概的意思就是一个手势与另一个手势需要保持一种关系，只有当另外一个手势失败了当前手势才能调用。<br>  反之如果另外的手势被被识别了，当前手势将不会被调用。<br>  所以单击手势必须等待双击手势的识别结果才不会导致冲突问题。<br><br></font>
+<font color="#0099ff" size="3"><br><br>  &#x5927;&#x6982;&#x7684;&#x610F;&#x601D;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x624B;&#x52BF;&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x624B;&#x52BF;&#x9700;&#x8981;&#x4FDD;&#x6301;&#x4E00;&#x79CD;&#x5173;&#x7CFB;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x624B;&#x52BF;&#x5931;&#x8D25;&#x4E86;&#x5F53;&#x524D;&#x624B;&#x52BF;&#x624D;&#x80FD;&#x8C03;&#x7528;&#x3002;<br>  &#x53CD;&#x4E4B;&#x5982;&#x679C;&#x53E6;&#x5916;&#x7684;&#x624B;&#x52BF;&#x88AB;&#x88AB;&#x8BC6;&#x522B;&#x4E86;&#xFF0C;&#x5F53;&#x524D;&#x624B;&#x52BF;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;<br>  &#x6240;&#x4EE5;&#x5355;&#x51FB;&#x624B;&#x52BF;&#x5FC5;&#x987B;&#x7B49;&#x5F85;&#x53CC;&#x51FB;&#x624B;&#x52BF;&#x7684;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#x624D;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x51B2;&#x7A81;&#x95EE;&#x9898;&#x3002;<br><br></font>
       
     </div>
 
@@ -413,6 +413,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/30/apache-proxy/" rel="prev" title="解决同源策略问题之Apache实现反向代理">
+                解决同源策略问题之Apache实现反向代理 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -484,7 +488,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -501,7 +505,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -597,8 +601,8 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

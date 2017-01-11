@@ -92,7 +92,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java," />
+  <meta name="keywords" content="web前端," />
 
 
 
@@ -110,19 +110,19 @@
 
 
 
-<meta name="description" content="&amp;#x5982;&amp;#x679C;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FDC;&amp;#x7A0B;&amp;#x7684;web&amp;#x670D;&amp;#x52A1;&amp;#xFF0C;&amp;#x672C;&amp;#x5730;&amp;#x4E00;&amp;#x822C;&amp;#x7684;&amp;#x51E0;&amp;#x79CD;&amp;#x8C03;&amp;#x7528;&amp;#x65B9;&amp;#x5F0F;
-HTTP&amp;#x7684;">
+<meta name="description" content="&amp;#x6211;&amp;#x4EEC;&amp;#x5728;&amp;#x6CA1;&amp;#x6709;&amp;#x670D;&amp;#x52A1;&amp;#x7AEF;&amp;#x6216;&amp;#x8005;&amp;#x6709;&amp;#x670D;&amp;#x52A1;&amp;#x7AEF;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x9700;&amp;#x8981;&amp;#x8BBF;&amp;#x95EE;&amp;#x4E0D;&amp;#x540C;&amp;#x6E90;&amp;#x6570;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SOAP调用webservice">
-<meta property="og:url" content="www.baidu.com/2016/09/06/soap-webservice/index.html">
+<meta property="og:title" content="解决同源策略问题之Apache实现反向代理">
+<meta property="og:url" content="www.baidu.com/2016/12/30/apache-proxy/index.html">
 <meta property="og:site_name" content="开启学习之旅">
-<meta property="og:description" content="&amp;#x5982;&amp;#x679C;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FDC;&amp;#x7A0B;&amp;#x7684;web&amp;#x670D;&amp;#x52A1;&amp;#xFF0C;&amp;#x672C;&amp;#x5730;&amp;#x4E00;&amp;#x822C;&amp;#x7684;&amp;#x51E0;&amp;#x79CD;&amp;#x8C03;&amp;#x7528;&amp;#x65B9;&amp;#x5F0F;
-HTTP&amp;#x7684;">
-<meta property="og:updated_time" content="2016-09-06T05:26:04.232Z">
+<meta property="og:description" content="&amp;#x6211;&amp;#x4EEC;&amp;#x5728;&amp;#x6CA1;&amp;#x6709;&amp;#x670D;&amp;#x52A1;&amp;#x7AEF;&amp;#x6216;&amp;#x8005;&amp;#x6709;&amp;#x670D;&amp;#x52A1;&amp;#x7AEF;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x9700;&amp;#x8981;&amp;#x8BBF;&amp;#x95EE;&amp;#x4E0D;&amp;#x540C;&amp;#x6E90;&amp;#x6570;">
+<meta property="og:image" content="www.baidu.com/30/apache-proxy/../../images/apache_proxy.png">
+<meta property="og:image" content="www.baidu.com/30/apache-proxy/../../images/proxy.png">
+<meta property="og:updated_time" content="2017-01-11T06:39:59.494Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SOAP调用webservice">
-<meta name="twitter:description" content="&amp;#x5982;&amp;#x679C;&amp;#x63D0;&amp;#x4F9B;&amp;#x4E00;&amp;#x4E2A;&amp;#x8FDC;&amp;#x7A0B;&amp;#x7684;web&amp;#x670D;&amp;#x52A1;&amp;#xFF0C;&amp;#x672C;&amp;#x5730;&amp;#x4E00;&amp;#x822C;&amp;#x7684;&amp;#x51E0;&amp;#x79CD;&amp;#x8C03;&amp;#x7528;&amp;#x65B9;&amp;#x5F0F;
-HTTP&amp;#x7684;">
+<meta name="twitter:title" content="解决同源策略问题之Apache实现反向代理">
+<meta name="twitter:description" content="&amp;#x6211;&amp;#x4EEC;&amp;#x5728;&amp;#x6CA1;&amp;#x6709;&amp;#x670D;&amp;#x52A1;&amp;#x7AEF;&amp;#x6216;&amp;#x8005;&amp;#x6709;&amp;#x670D;&amp;#x52A1;&amp;#x7AEF;&amp;#x7684;&amp;#x65F6;&amp;#x5019;&amp;#x9700;&amp;#x8981;&amp;#x8BBF;&amp;#x95EE;&amp;#x4E0D;&amp;#x540C;&amp;#x6E90;&amp;#x6570;">
+<meta name="twitter:image" content="www.baidu.com/30/apache-proxy/../../images/apache_proxy.png">
 
 
 
@@ -143,9 +143,9 @@ HTTP&amp;#x7684;">
 
 
 
-  <link rel="canonical" href="www.baidu.com/2016/09/06/soap-webservice/"/>
+  <link rel="canonical" href="www.baidu.com/2016/12/30/apache-proxy/"/>
 
-  <title> SOAP调用webservice | 开启学习之旅 </title>
+  <title> 解决同源策略问题之Apache实现反向代理 | 开启学习之旅 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -318,7 +318,7 @@ HTTP&amp;#x7684;">
             
             
               
-                SOAP调用webservice
+                解决同源策略问题之Apache实现反向代理
               
             
           </h1>
@@ -330,8 +330,8 @@ HTTP&amp;#x7684;">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-06T12:59:17+08:00" content="2016-09-06">
-              2016-09-06
+            <time itemprop="dateCreated" datetime="2016-12-30T16:22:08+08:00" content="2016-12-30">
+              2016-12-30
             </time>
           </span>
 
@@ -341,8 +341,8 @@ HTTP&amp;#x7684;">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/06/soap-webservice/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/06/soap-webservice/" itemprop="commentsCount"></span>
+                <a href="/2016/12/30/apache-proxy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/30/apache-proxy/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -352,7 +352,7 @@ HTTP&amp;#x7684;">
 
           
           
-             <span id="/2016/09/06/soap-webservice/" class="leancloud_visitors" data-flag-title="SOAP调用webservice">
+             <span id="/2016/12/30/apache-proxy/" class="leancloud_visitors" data-flag-title="解决同源策略问题之Apache实现反向代理">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -374,14 +374,12 @@ HTTP&amp;#x7684;">
       
 
       
-        <h2 id="&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x7684;web&#x670D;&#x52A1;&#xFF0C;&#x672C;&#x5730;&#x4E00;&#x822C;&#x7684;&#x51E0;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;"><a href="#&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x7684;web&#x670D;&#x52A1;&#xFF0C;&#x672C;&#x5730;&#x4E00;&#x822C;&#x7684;&#x51E0;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;" class="headerlink" title="&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x7684;web&#x670D;&#x52A1;&#xFF0C;&#x672C;&#x5730;&#x4E00;&#x822C;&#x7684;&#x51E0;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;"></a>&#x5982;&#x679C;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x7684;web&#x670D;&#x52A1;&#xFF0C;&#x672C;&#x5730;&#x4E00;&#x822C;&#x7684;&#x51E0;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;</h2><ul>
-<li>HTTP&#x7684;&#x65B9;&#x5F0F;</li>
-<li>Axis2(&#x751F;&#x6210;&#x5BA2;&#x6237;&#x7AEF;&#x65B9;&#x5F0F; ,RPC,DOM)</li>
-<li>SOAP </li>
-</ul>
-<p> &#x4E00;&#x822C;&#x7684;webservice&#x8BF7;&#x6C42;&#x8FD9;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x90FD;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;,&#x4F46;&#x662F;&#x5982;&#x679C;&#x670D;&#x52A1;&#x7AEF;&#x91C7;&#x7528;&#x4E86;&#x67D0;&#x4E9B;&#x9650;&#x5236;&#xFF0C;&#x4F8B;&#x5982;&#x7981;&#x7528;&#x4E86;http&#x8BBF;&#x95EE;,&#x4EE5;&#x53CA;&#x91C7;&#x7528;cookie&#x4FDD;&#x6301;&#x4F1A;&#x8BDD;&#x7684;&#x8FD9;&#x79CD;&#x5947;&#x8469;&#x65B9;&#x5F0F;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F60;&#x4F7F;&#x7528;<a href="http://www.java2s.com/Code/JarDownload/ksoap2/ksoap2-android-assembly-2.5.7-jar-with-dependencies.jar.zip" title="Title" target="_blank" rel="external">ksoap2-android-assembly-2.5.7-jar-with-dependencies.jar</a> &#x8FD9;&#x4E2A;&#x5305;&#x6765;&#x5B9E;&#x73B0;&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x901A;&#x4FE1;</p>
-<p>&#x53C2;&#x8003;&#xFF1A;<a href="http://blog.csdn.net/lovekwf/article/details/44205101" target="_blank" rel="external">http://blog.csdn.net/lovekwf/article/details/44205101</a></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> Object <span class="title">coreCallResponse</span><span class="params">(String methodName, List&lt;Object[]&gt; params)</span> </span>{</div><div class="line"></div><div class="line">   	String result = <span class="keyword">null</span>;<span class="comment">// &#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;</span></div><div class="line">	String SOAP_ACTION = NS_URL + methodName;</div><div class="line">	SoapObject requestObject = <span class="keyword">new</span> SoapObject(NS_URL, methodName);</div><div class="line">	<span class="keyword">if</span> (params != <span class="keyword">null</span>) {</div><div class="line">           <span class="comment">//&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#x7684;&#x53C2;&#x6570;&#x91C7;&#x7528;PropertyInfo&#x6765;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x65E0;&#x6CD5;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5F02;&#x5E38;</span></div><div class="line">		<span class="keyword">if</span> (methodName.equals(<span class="string">&quot;wsQueryYktByUserCodeArray&quot;</span>)) {</div><div class="line">			<span class="keyword">for</span> (Object[] oArr : params) {</div><div class="line">				<span class="keyword">for</span> (Object o : oArr) {</div><div class="line">					PropertyInfo p = <span class="keyword">new</span> PropertyInfo();</div><div class="line">					p.setName(<span class="string">&quot;string&quot;</span>);</div><div class="line">					p.setValue(o);</div><div class="line">					requestObject.addProperty(p);</div><div class="line">				}</div><div class="line">			}</div><div class="line"></div><div class="line">		} <span class="keyword">else</span> {</div><div class="line">			<span class="keyword">for</span> (Object[] kv : params) {</div><div class="line">				requestObject.addProperty(kv[<span class="number">0</span>].toString(), kv[<span class="number">1</span>]);</div><div class="line">			}</div><div class="line">		}</div><div class="line">	}</div><div class="line">	SoapSerializationEnvelope envelope = <span class="keyword">new</span> SoapSerializationEnvelope(</div><div class="line">			SoapEnvelope.VER11);</div><div class="line">	envelope.dotNet = <span class="keyword">false</span>; </div><div class="line">	envelope.bodyOut = requestObject;</div><div class="line">	HttpTransportSE hts = <span class="keyword">new</span> HttpTransportSE(SOAP_URL);</div><div class="line">	Object o = <span class="keyword">null</span>;</div><div class="line">	<span class="keyword">try</span> {</div><div class="line">		LinkedList&lt;HeaderProperty&gt; reqHeaders = <span class="keyword">new</span> LinkedList&lt;HeaderProperty&gt;();</div><div class="line">		<span class="comment">// &#x82E5;&#x5DF2;&#x7ECF;&#x5E26;&#x6709;cookie,&#x5219;&#x6BCF;&#x6B21;&#x8BBF;&#x95EE;WebService&#x65F6;,&#x8981;&#x5E26;&#x6709;&#x8FD9;&#x4E2A;cookie&#x3002;</span></div><div class="line">		<span class="keyword">if</span> (mSessionHeader != <span class="keyword">null</span>) {</div><div class="line">			reqHeaders.add(<span class="keyword">new</span> HeaderProperty(<span class="string">&quot;Cookie&quot;</span>, mSessionHeader</div><div class="line">					.getValue()));</div><div class="line"></div><div class="line">		}</div><div class="line">           <span class="comment">// &#x8BBF;&#x95EE;WebService</span></div><div class="line">		<span class="meta">@SuppressWarnings</span>(<span class="string">&quot;rawtypes&quot;</span>)</div><div class="line">		List headerList = hts.call(SOAP_ACTION, envelope, reqHeaders);</div><div class="line">		<span class="keyword">if</span> (headerList != <span class="keyword">null</span>) {</div><div class="line">			<span class="keyword">for</span> (Object headerElement : headerList) {</div><div class="line">				HeaderProperty headerProperty = (HeaderProperty) headerElement;</div><div class="line">				String headerKey = headerProperty.getKey();</div><div class="line">				String headerValue = headerProperty.getValue();</div><div class="line">				<span class="keyword">if</span> (headerKey != <span class="keyword">null</span></div><div class="line">						&amp;&amp; headerKey.equalsIgnoreCase(<span class="string">&quot;set-cookie&quot;</span>)) {</div><div class="line">					<span class="comment">// &#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x7684;set-cookie&#x9879;</span></div><div class="line">					mSessionHeader = headerProperty;</div><div class="line">				}</div><div class="line">			}</div><div class="line"></div><div class="line">		}</div><div class="line"></div><div class="line">		o = envelope.getResponse();</div><div class="line">		result = o.toString();</div><div class="line">	} <span class="keyword">catch</span> (SoapFault e) {</div><div class="line">		e.printStackTrace();</div><div class="line">	} <span class="keyword">catch</span> (IOException e) {</div><div class="line">		e.printStackTrace();</div><div class="line">	} <span class="keyword">catch</span> (XmlPullParserException e) {</div><div class="line">		e.printStackTrace();</div><div class="line">	}</div><div class="line"></div><div class="line">	<span class="keyword">return</span> result;</div><div class="line">}</div></pre></td></tr></table></figure>
+        <p><img src="/30/apache-proxy/../../images/apache_proxy.png" width="1815" height="224" border="0" alt=""><br>&#x6211;&#x4EEC;&#x5728;&#x6CA1;&#x6709;&#x670D;&#x52A1;&#x7AEF;&#x6216;&#x8005;&#x6709;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x4E0D;&#x540C;&#x6E90;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x51FA;&#x73B0;&#x540C;&#x6E90;&#x7B56;&#x7565;&#x95EE;&#x9898;<br>&#x56E0;&#x6B64;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;Apache&#x7684;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x5373;&#x53EF;&#x8F7B;&#x677E;&#x7684;&#x89E3;&#x51B3;&#x540C;&#x6E90;&#x7B56;&#x7565;&#x95EE;&#x9898;&#x3002;<br>&#x6709;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x81EA;&#x7136;&#x6709;&#x6B63;&#x5411;&#x4EE3;&#x7406;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;:<br><img src="/30/apache-proxy/../../images/proxy.png" width="716" height="453" border="0" alt=""><br>&#x7406;&#x89E3;&#x4E86;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x548C;&#x6B63;&#x5411;&#x4EE3;&#x7406;&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;Apache&#x670D;&#x52A1;&#x5668;&#x4E86;.<br>&#x4ECE;Apache&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;apache&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x89E3;&#x538B;&#x540E;&#x6253;&#x5F00;conf/httpd.conf&#x6587;&#x4EF6;<br>&#x89E3;&#x9664;&#x4E0B;&#x9762;&#x7684;&#x6CE8;&#x91CA;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">######################apache&#x4EE3;&#x7406;&#x89E3;&#x9664;&#x6CE8;&#x91CA; start......########</div><div class="line">LoadModule mime_module modules/mod_mime.so</div><div class="line">#LoadModule mime_magic_module modules/mod_mime_magic.so</div><div class="line">#LoadModule negotiation_module modules/mod_negotiation.so</div><div class="line">LoadModule proxy_module modules/mod_proxy.so</div><div class="line">#LoadModule proxy_ajp_module modules/mod_proxy_ajp.so</div><div class="line">#LoadModule proxy_balancer_module modules/mod_proxy_balancer.so</div><div class="line">LoadModule proxy_connect_module modules/mod_proxy_connect.so</div><div class="line">#LoadModule proxy_express_module modules/mod_proxy_express.so</div><div class="line">#LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so</div><div class="line">LoadModule proxy_ftp_module modules/mod_proxy_ftp.so</div><div class="line">#LoadModule proxy_html_module modules/mod_proxy_html.so</div><div class="line">#LoadModule proxy_hcheck_module modules/mod_proxy_hcheck.so</div><div class="line">LoadModule proxy_http_module modules/mod_proxy_http.so</div><div class="line">#LoadModule proxy_http2_module modules/mod_proxy_http2.so</div><div class="line">#######################apache&#x4EE3;&#x7406;&#x89E3;&#x9664;&#x6CE8;&#x91CA; end..........#######</div></pre></td></tr></table></figure></p>
+<p>&#x66F4;&#x6539;&#x9700;&#x8981;&#x6620;&#x5C04;&#x7684;&#x672C;&#x5730;&#x6839;&#x76EE;&#x5F55;,&#x5E76;&#x5F00;&#x653E;&#x8BBF;&#x95EE;&#x6743;&#x9650;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#</div><div class="line"># Note that from this point forward you must specifically allow</div><div class="line"># particular features to be enabled - so if something&apos;s not working as</div><div class="line"># you might expect, make sure that you have specifically enabled it</div><div class="line"># below.</div><div class="line">#</div><div class="line"></div><div class="line">#</div><div class="line"># DocumentRoot: The directory out of which you will serve your</div><div class="line"># documents. By default, all requests are taken from this directory, but</div><div class="line"># symbolic links and aliases may be used to point to other locations.</div><div class="line">#</div><div class="line">DocumentRoot &quot;C:\Users\Administrator\Documents\HBuilderProject\WebJSApi&quot;</div><div class="line">&lt;Directory &quot;C:\Users\Administrator\Documents\HBuilderProject\WebJSApi&quot;&gt;</div><div class="line">    #</div><div class="line">    # Possible values for the Options directive are &quot;None&quot;, &quot;All&quot;,</div><div class="line">    # or any combination of:</div><div class="line">    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews</div><div class="line">    #</div><div class="line">    # Note that &quot;MultiViews&quot; must be named *explicitly* --- &quot;Options All&quot;</div><div class="line">    # doesn&apos;t give it to you.</div><div class="line">    #</div><div class="line">    # The Options directive is both complicated and important.  Please see</div><div class="line">    # http://httpd.apache.org/docs/2.4/mod/core.html#options</div><div class="line">    # for more information.</div><div class="line">    #</div><div class="line">    #Options Indexes FollowSymLinks</div><div class="line"></div><div class="line">    #</div><div class="line">    # AllowOverride controls what directives may be placed in .htaccess files.</div><div class="line">    # It can be &quot;All&quot;, &quot;None&quot;, or any combination of the keywords:</div><div class="line">    #   Options FileInfo AuthConfig Limit</div><div class="line">    #</div><div class="line">    AllowOverride None</div><div class="line"></div><div class="line">    #</div><div class="line">    # Controls who can get stuff from this server.</div><div class="line">    #</div><div class="line">    Require all granted</div><div class="line">&lt;/Directory&gt;</div></pre></td></tr></table></figure></p>
+<p>&#x6700;&#x540E;&#x4E00;&#x6B65;&#xFF0C;&#x5728;conf\extra\httpd-vhosts.conf&#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ProxyRequests Off</div><div class="line">#ProxyPass / http://www.baidu.com</div><div class="line">#ProxyPassReverse / http://www.baidu.com</div></pre></td></tr></table></figure></p>
+<p>&#x4EFB;&#x4F55;&#x8BBF;&#x95EE;&#x4EE3;&#x7406;&#x670D;&#x52A1;/&#x7684;&#x8BF7;&#x6C42;&#x90FD;&#x4F1A;&#x8F6C;&#x53D1;&#x5230;<a href="http://www.baidu.com">http://www.baidu.com</a> &#x4E0B;&#x9762;<br>&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;Apache&#x7684;&#x51E0;&#x4E2A;&#x5E38;&#x7528;&#x547D;&#x4EE4;&#xFF1A;<br>httpd.exe -k install   &#x5B89;&#x88C5;Apache&#x670D;&#x52A1;<br>httpd.exe -k uninstall &#x5378;&#x8F7D;Apache&#x670D;&#x52A1;<br>httpd.exe -k start     &#x542F;&#x52A8;&#x670D;&#x52A1;<br>httpd.exe -k stop      &#x505C;&#x6B62;&#x670D;&#x52A1;</p>
+<p>&#x6CE8;&#x610F;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#x5207;&#x8BB0;&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FD0;&#x884C;CMD</p>
+
       
     </div>
 
@@ -403,7 +401,7 @@ HTTP&amp;#x7684;">
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag">#java</a>
+            <a href="/tags/web前端/" rel="tag">#web前端</a>
           
         </div>
       
@@ -412,17 +410,13 @@ HTTP&amp;#x7684;">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/29/andorid-s-1/" rel="next" title="Bitmap在Intent中传递的问题">
-                <i class="fa fa-chevron-left"></i> Bitmap在Intent中传递的问题
+              <a href="/2016/09/30/uitapgesture/" rel="next" title="iOS手势单双击冲突问题">
+                <i class="fa fa-chevron-left"></i> iOS手势单双击冲突问题
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/07/unknown-0/" rel="prev" title="程序员的工具箱">
-                程序员的工具箱 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -448,8 +442,8 @@ HTTP&amp;#x7684;">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/09/06/soap-webservice/"
-           data-title="SOAP调用webservice" data-url="www.baidu.com/2016/09/06/soap-webservice/">
+      <div class="ds-thread" data-thread-key="2016/12/30/apache-proxy/"
+           data-title="解决同源策略问题之Apache实现反向代理" data-url="www.baidu.com/2016/12/30/apache-proxy/">
       </div>
     
   </div>
@@ -589,7 +583,7 @@ HTTP&amp;#x7684;">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如果提供一个远程的web服务，本地一般的几种调用方式"><span class="nav-number">1.</span> <span class="nav-text">如果提供一个远程的web服务，本地一般的几种调用方式</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
